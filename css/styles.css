@@ -1,0 +1,371 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html,
+body {
+  position: relative;
+}
+
+body {
+  overflow-y: auto;
+  min-height: 100vh;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+footer {
+  background: #f1f1f1;
+  width: 100%;
+  padding: 16px 0px;
+  color: #999;
+  vertical-align: bottom;
+  margin-top: 40px;
+  text-align: center;
+  /* width: 100%; */
+  /* height: 2.5rem;   */
+}
+
+.banner {
+  height: 500px;
+  width: 100%;
+  background: #999;
+  margin: 20px 0px;
+}
+
+.content {
+  padding: 20px 0px;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+}
+
+/* ================================== */
+/* Layout page CSS */
+/* ================================== */
+
+/* ================================== */
+/* Layout page CSS */
+/* ================================== */
+/*  */
+/* .tile {
+    position: relative;
+   border-radius: 8px;
+   overflow: hidden;
+   display: block;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tile img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   transition: transform 0.3s ease;
+  }
+  
+  .tile img:hover {
+   transform: scale(1.05);
+  }
+  
+  .tile-text {
+   position: absolute;
+   z-index: 1;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    text-align: center;
+  } */
+/*  */
+.hero-section {
+  height: 40vh;
+  width: 100%;
+  background-image: url("https://images.unsplash.com/photo-1725565175662-3618048d8be2?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+.hero-section .form-control {
+  width: 60%;
+}
+.tile {
+  /* TODO: MODULE_CARDS */
+  /* 1. Fill in the required properties. */
+  /* display: flex;
+  justify-content: space-between; */
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  display: block;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.tile img {
+  /* TODO: MODULE_CARDS */
+  /* 1. Fill in the required properties. */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.tile img:hover {
+  /* TODO: MODULE_CARDS */
+  /* 1. Fill in the required properties. */
+  transform: scale(1.05);
+}
+
+/* Hint: Notice the position:absolute and z-index properties. */
+/* Think about how those in relation to the existing "tile" classes. */
+.tile-text {
+  position: absolute;
+  z-index: 1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  text-align: center;
+}
+
+/* // File: css/styles.css */
+.tile {
+  height:100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tile img {
+  width:100%;
+  height:100%;
+  transition: all 0.2s;
+}
+.tile img:hover {
+  filter: brightness(50%);
+  transform: scale(1.1);
+}
+
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/assets/hero.jpg");
+
+  /* TODO: MODULE_LAYOUT */
+  /* 1. Set a specific height. */
+  /* 2. Position and center the image to scale nicely on all screens. */
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* text-align: center; */
+  /* margin: auto; */
+}
+h2 {
+  color: white;
+}
+
+.hero-subheading {
+  font-size: 24px;
+  font-weight: 100;
+  color: white;
+}
+.hero-input {
+  width: 80%;
+  height: 50px;
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
+  /* text-align: center; */
+}
+
+.nav-link {
+  margin-right: 36px;
+}
+
+/* ================================== */
+/* Adventures grid page CSS */
+/* ================================== */
+
+/* // File: css/styles.css */
+.adventure-detail-card {
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.adventure-card-image {
+  width: 100%;
+  height: 100%;
+}
+.adventure-card-image:hover {
+  filter: brightness(50%);
+}
+
+
+/* // File: css/styles.css */
+.img-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  column-gap: 1.5rem;
+  row-gap: 1rem;
+}
+
+.primary-image {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+
+/* // File: css/styles.css */
+.adventure-detail-card {
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 16px;
+}
+
+@media only screen and (min-width: 992px) {
+  #reservation {
+    width: 300px;
+    position: fixed;
+  }
+}
+
+
+
+
+.adventure-card {
+  /* TODO: MODULE_ADVENTURES_GRID */
+  /* 1. Fill in the required properties. */
+  height: 20rem;
+  border-radius: 8px;
+}
+.adventure-card img {
+  /* TODO: MODULE_ADVENTURES_GRID */
+  /* 1. Fill in the required properties. */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.2s all;
+}
+.adventure-card img:hover {
+  /* TODO: MODULE_ADVENTURES_GRID */
+  /* 1. Fill in the required properties. */
+  filter: brightness(50%);
+}
+
+/* ================================== */
+/* Adventure details page CSS */
+/* ================================== */
+
+.adventure-detail-card {
+  /* TODO: MODULE_ADVENTURE_DETAILS */
+  /* 1. Fill in the required properties. */
+}
+
+.adventure-card-image {
+  /* TODO: MODULE_ADVENTURE_DETAILS */
+  /* 1. Fill in the required properties. */
+}
+.adventure-card-image:hover {
+  /* TODO: MODULE_ADVENTURE_DETAILS */
+  /* 1. Fill in the required properties. */
+}
+.experience-content ul li {
+  margin-left: 16px;
+  padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktops phones: */
+  #reservation {
+    width: 400px;
+    position: fixed;
+  }
+}
+.adventure-card {
+  /* Styles for the overall card container */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden; /* Ensures the image doesn't overflow rounded corners on hover */
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.adventure-card:hover {
+  /* Hover effect for the card container */
+  transform: translateY(-5px); /* Lifts the card slightly on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increases shadow to match lift effect */
+}
+
+.adventure-card img {
+  /* Styles for the image inside the card */
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image fills container while maintaining aspect ratio */
+}
+
+.adventure-card img:hover {
+  /* Hover effect for the image inside the card */
+  transform: scale(1.1); /* Creates a subtle zoom effect on the image */
+}
+
+/* ================================== */
+/* Adventure details page CSS */
+/* ================================== */
+
+.adventure-detail-card {
+  /* TODO: MODULE_ADVENTURE_DETAILS - Not implemented as per current scope */
+  padding: 1rem;
+}
+
+.adventure-card-image {
+  /* TODO: MODULE_ADVENTURE_DETAILS - Not implemented as per current scope */
+}
+
+.adventure-card-image:hover {
+  /* TODO: MODULE_ADVENTURE_DETAILS - Not implemented as per current scope */
+}
+
+.experience-content ul li {
+  margin-left: 16px;
+  padding: 0;
+}
+
+
+@media screen and (min-width: 1200px) {
+  .fixed-content {
+    position: fixed;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktops phones: */
+  #reservation {
+      width: 400px;
+      position: fixed;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .fixed-content {
+    position: fixed;
+  }
+}
